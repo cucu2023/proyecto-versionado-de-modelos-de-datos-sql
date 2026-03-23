@@ -1,0 +1,13 @@
+# CLI
+typer>=0.9.0
+
+# Salida en terminal (tablas, colores)
+rich>=13.0.0
+
+# Modelos y validación (core/models.py, diff/engine.py)
+pydantic>=2.0.0
+
+# Introspección de modelos ORM (parser/sqlalchemy.py; requiere SQLAlchemy 2.x por DeclarativeBase)
+sqlalchemy>=2.0.0
+
+pytest>=9.0.0
