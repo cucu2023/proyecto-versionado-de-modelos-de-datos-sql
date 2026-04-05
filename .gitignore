@@ -1,0 +1,45 @@
+# Bytecode y caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Caché de pytest (incluye binarios bajo .pytest_cache/)
+.pytest_cache/
+
+# Cobertura y reportes de tests
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Entornos virtuales
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# Empaquetado / build
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Herramientas de análisis
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
