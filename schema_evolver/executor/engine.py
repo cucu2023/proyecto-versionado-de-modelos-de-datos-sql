@@ -29,9 +29,9 @@ class SQLExecutor:
                 statements.append(f"DROP TABLE {op.table_name}")
 
             elif isinstance(op, AddColumn):
-                pk = " PRIMARY KEY" if col.primary_key else ""
-                nullable = "" if col.column.nullable else " NOT NULL"
-                statements.append(f"ALTER TABLE {op.table_name} ADD COLUMN {op.column_name} {op.column.type}{nullable}")
+                pk = " PRIMARY KEY" if op.column.primary_key else ""
+                nullable = "" if op.column.nullable else " NOT NULL"
+                statements.append(f"ALTER TABLE {op.table_name} ADD COLUMN {op.column_name} {op.column.type}{pk}{nullable}")
 
             elif isinstance(op, RemoveColumn):
                 statements.append(f"ALTER TABLE {op.table_name} DROP COLUMN {op.column_name}")
